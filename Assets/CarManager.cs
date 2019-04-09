@@ -38,13 +38,12 @@ public class CarManager : MonoBehaviour
         
         /*On choisit un nombre entier compris entre -1 et 2 (exclu);
         La valeur x du vecteur randomPosition est donc -1, 0, ou 1.
-
         Nos voitures pouvant avoir une valeur de -3, 0, ou 3, on multiplie cette valeur par 3. */
         randomPosition.x = Random.Range(-1,2);
         randomPosition.x *= 3;
         //On place la voiture au-dessus du sol.
         randomPosition.y = 2f;
-        //On place la voiture 50 mètres devant le joueur.
+        //On place la voiture 60 mètres devant le joueur.
         randomPosition.z = player.transform.position.z + 60f;
 
         //On instantie la voiture en enfant de ce gameobject, à la position choisie.
